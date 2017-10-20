@@ -1,0 +1,45 @@
+1.A multitasking OS allows you to run multiple processes (tasks)"simultaneously".
+ They do not actually run at the same time . What happens isthat one process runs 
+for a while, then the OS breaks in through an interrupt, stores away the state of the 
+current process, restores the context of another, and allows that other process to 
+run fora while, etcetera.  The processes ran by the OS can run processes of their
+known as child processes.
+
+2.Process are assigned by priority and are given id numbers that usually top out at the
+ number 32767 which is the highest representation for a signed 16 bit number value. The
+ value of the process ID number does not give any description of precedence or value they 
+are randomly assigned. A process that was stopped releases it process ID the ID is not
+ immediately reused for error protection. PID’s are used to track the process using the PS command 
+details about the process can be found, information like how much of the CPU the process is using, 
+what the process is currently doing, what files it has open, and the owner of the process.
+
+
+3. ps er | grep *.py
+
+4.Running process is running or ready to run 
+Sleeping, not running, waiting for an event such as a keystroke 
+Uninterruptible sleep, Process is waiting for  I/O operations
+ Stopped the process has been instructed to stop 
+defuncted or zombie process. this is a process terminated by parent but not cleaned 
+High Priority process Priority process
+
+5.kill -9 4576
+
+6 nice ./example.sh
+
+7. nice -n 5 testuser
+
+8.compression is used to get the most data in the smallest available space. Data compression
+removes redundancy. A command used for data compression is gzip or bzip2
+Archiving is a task used often with compression, Archiving is the process of gathering
+a group of files and bundling them into a single large file. Archiving is often done as
+part of system backups. It is also used when old data is moved from a system
+to some type of long term storage. tar cf example.tar example.dir will create the tar file
+of the directory named example.
+
+9 tar -W  test.tar.gz
+
+10 tar tf test.tar.gz | grep test
+
+
+
